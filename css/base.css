@@ -1,0 +1,182 @@
+/* GERAL */
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+figure, p, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #2A2D8C;
+    background-color: #FAFAFA;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:
+      "aside header"
+      "aside main";
+    height: 100vh;
+    margin: 0;
+}
+/* GERAL */
+
+
+
+
+
+
+
+
+
+
+/* HEADER */
+header>figure>img{
+    margin-right: 1em;
+}
+header>p{
+    margin-right: 0.5em;
+}
+
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+}
+
+header>p{
+    font-size: 27px;
+}
+/* HEADER */
+
+
+
+
+
+
+
+
+
+
+/* ASIDE */
+aside{
+    grid-area: aside;
+    border-right: 4px solid #2A2D8C;
+    background-color: #FAFAFA;
+    font-size: 27px;
+    
+    height: 100%;
+    position:fixed;
+}
+
+aside>nav{
+    display: flex;
+    flex-direction: column;
+    gap: 59px;
+}
+
+div#divLogo{
+    margin-left: 0.5em;
+    margin-top: 0.25em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div#divLogo>figure>a>svg{
+    margin-left: 1em;
+}
+
+svg#redutor{
+    fill: currentColor;
+    transition: fill 0.3s ease;
+}
+
+svg#redutor:hover {
+    color: #EAB555;
+}
+
+.containerAsideTopicos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 1.5rem;
+}
+  
+
+.asideTopico{
+    position: relative; /* para o ::after posicionar corretamente */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    margin-left: 1.5em;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+    color: inherit;
+    width: fit-content;
+}
+
+.asideTopico>p{
+    margin-left: 0px;
+}
+  
+.asideTopico::after{
+    content: "";
+    position: absolute;
+    bottom: -4px; /* um pouco abaixo do texto */
+    left: -10px; /* para começar antes do ícone */
+    height: 4px; /* espessura da linha */
+    width: 0;
+    background-color: #2A2D8C; /* mesma cor do texto */
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+  
+.asideTopico:hover::after {
+    width: calc(100% + 20px); /* vai além do texto e ícone */
+}
+
+.asideTopico.ativo::after {
+    width: calc(100% + 20px); /* vai além do texto e ícone */
+}
+/* ASIDE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

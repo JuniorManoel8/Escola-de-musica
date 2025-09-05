@@ -1,0 +1,220 @@
+main{
+    grid-area: main;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+#mainTitulo{
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#mainTitulo>h1{
+    font-size: 48px;
+}
+
+#mainTitulo>figure>svg{
+    width: 45px;
+    height:45px;
+    margin-right: 1em;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    max-width: 40em;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+}
+
+.formInput>label{
+    font-size: 24px;
+}
+
+.formInput > input, .formInput > textarea, .formInput > select{
+    box-sizing: border-box; 
+    padding: 0 0.8em;       
+    height: 60px;           
+}
+
+.formInput>input, .formInput>textarea{
+    outline: none; /* remove o highlight padrão */
+    font-size: 16px;
+    color: #2A2D8C;
+    border: 2px solid #2A2D8C;
+    border-radius: 20px;
+    width: 500px;
+    transition: border-color 0.3s ease;
+}
+
+.formInput>textarea {
+    resize: none;
+    overflow: hidden;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+
+.formInput>input:hover, .formInput>textarea:hover{
+    border-color: #EAB555;
+}
+
+.formInput>input:focus, .formInput>textarea:focus{
+    border-color: #EAB555;
+}
+
+
+.formInput select {
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #2A2D8C;
+    border-radius: 20px;
+    width: 500px;
+    padding: 0 1em;
+    color: #2A2D8C;
+    background-color: #FAFAFA;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+
+    background-image: url("data:image/svg+xml;utf8,<svg width='20' height='10' viewBox='0 0 20 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1.24782 0C1.57961 0.00029565 1.8977 0.133945 2.13216 0.371564L8.53276 6.85028C8.72644 7.04638 8.95639 7.20194 9.20948 7.30807C9.46256 7.4142 9.73382 7.46882 10.0078 7.46882C10.2817 7.46882 10.553 7.4142 10.8061 7.30807C11.0591 7.20194 11.2891 7.04638 11.4828 6.85028L17.8792 0.380008C18.1152 0.14927 18.4313 0.0215939 18.7595 0.02448C19.0876 0.0273661 19.4014 0.160583 19.6335 0.395439C19.8655 0.630294 19.9971 0.947997 20 1.28012C20.0028 1.61224 19.8767 1.93221 19.6487 2.17111L13.2573 8.64139C12.3961 9.51139 11.2291 10 10.0124 10C8.79564 10 7.62862 9.51139 6.76742 8.64139L0.366823 2.16267C0.191944 1.98577 0.0727501 1.7604 0.0242825 1.51501C-0.0241833 1.26961 0.000247955 1.01518 0.0944939 0.783821C0.188742 0.552464 0.348581 0.354548 0.553843 0.215049C0.759104 0.0755506 1.00059 0.000719734 1.24782 0Z' fill='%232A2D8C'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1em center;
+    background-size: 1.2em;
+}
+
+.formInput>select:hover{
+    border-color: #EAB555;
+}
+
+.formInput>select:focus{
+    border-color: #EAB555;
+}
+
+.tags-container {
+    margin-top: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.tag {
+    border: 2px solid #2A2D8C;
+    color: #2A2D8C;
+    padding: 0.2em 0.6em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    height: 20px;
+}
+
+.tag .tagRemover {
+    margin-left: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.tagRemover:hover{
+    color: #FF0000;
+}
+
+
+
+
+
+form>button{
+    border: 0px solid #2A2D8C;
+    border-radius: 20px;
+    background-color: #2A2D8C;
+
+    font-size: 36px;
+    color: #FAFAFA;
+    width: 335px;
+    height: 66px;
+
+    transition: background-color 0.3s ease;
+}
+
+form>button:hover{
+    background-color: #EAB555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.formFile{
+    display: flex; 
+    border: 2px solid #2A2D8C; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    width: 500px; 
+    height: 50px;
+}
+
+/* Botão do lado esquerdo */
+.fileBotao {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #f2f2f2;
+    color: #2A2D8C; 
+    font-size: 14px; 
+    font-weight: 500; 
+    cursor: pointer; 
+    flex: 0 0 45%; /* largura fixa ~ metade */ 
+    border-right: 2px solid #2A2D8C; 
+    transition: all 0.3s ease;
+}
+
+.fileBotao:hover{
+    color: #EAB555;
+    background-color: #EAEAEA;
+}
+
+.fileBotao>figure{
+    margin-right: 0.2em;
+}
+
+/* Área do nome do arquivo */
+.fileNome {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #2A2D8C;
+    background-color: #FAFAFA;
+}
+
+/* Esconde o input real */
+.formFile input[type="file"] {
+    display: none;
+}

@@ -1,0 +1,118 @@
+main{
+    grid-area: main;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+#mainTitulo{
+    margin-top: 2.5em;
+}
+
+#mainTitulo>h1{
+    font-size: 48px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+
+
+#mainTitulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#mainTitulo>figure>svg{
+    width: 45px;
+    height:45px;
+    margin-right: 1em;
+}
+
+#a2220193213{
+    font-size: 27px;
+}
+
+#a2220193213{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+.cardAutocadastro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 15px;
+    border: 2px solid #2A2D8C;
+    border-radius: 20px;
+
+    min-height: 100px;
+    padding: 0 1em;
+    margin-bottom: 3em;
+}
+
+
+.autocadastroCampo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.nome { /* .autocadastroCampo */
+  width: 250px;
+}
+
+.email { /* .autocadastroCampo */
+    width: 300px;
+}
+
+.instrumentos { /* .autocadastroCampo */
+  width: 200px;
+}
+
+.instrumentos p { /* .autocadastroCampo */
+  margin: 0;
+}
+
+.autocadastroBotao{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.autocadastroBotao>button{
+    width: 90px;
+    height: 50px;
+    background-color: inherit;
+    border-radius: 10px;
+}
+
+.botaoAceitar, .botaoRecusar{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 0.2em;
+}
+
+.botaoAceitar{
+    border: 2px solid #00FF00;
+    color: #00FF00;
+}
+
+.botaoRecusar{
+    border: 2px solid #FF0000;
+    color: #FF0000;
+}
+
+.botaoAceitar:hover{
+    border: 4px solid #00FF00;
+    cursor: pointer;
+    font-weight: bold;
+}
+.botaoRecusar:hover{
+    border: 4px solid #FF0000;
+    cursor: pointer;
+    font-weight: bold;
+}
